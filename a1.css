@@ -1,0 +1,122 @@
+body {
+    background-image: url("PAPER.jpg");
+    background-color: #cccccc;
+    height: 2500px;
+    width: 1024px;
+}
+
+#title {
+    z-index: 9;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 75px;
+    top: 30px;
+    right: 1100px;
+    max-width: 10%;
+}
+
+.mountains {
+    z-index: 0;
+    position: absolute;
+    left: 0; /* Center alignment adjustment */
+    right: 0; /* Center alignment adjustment */
+    margin: auto; /* Center alignment adjustment */
+    top: 250px;
+    width: 800px;
+    height: auto;
+}
+
+#subText {
+    font-size: 25px;
+    z-index: 2;
+    position: absolute;
+    left: 150px;
+    top: 500px;
+}
+
+#paragraph0 {
+    font-weight: bold;
+    font-size: 50px;
+    z-index: 2;
+    color: #ffffff;
+    position: absolute;
+    left: 950px;
+    top: 600px;
+}
+
+#title0 {
+    font-weight: bold;
+    font-size: 50px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 950px;
+    top: 420px;
+    text-decoration-thickness: 5px;
+}
+
+/* ... (existing styles) ... */
+
+#paragraph2 {
+    font-weight: bold;
+    font-size: 50px;
+    z-index: 2;
+    color: #ffffff;
+    position: absolute;
+    left: 0; /* Center alignment adjustment */
+    right: 0; /* Center alignment adjustment */
+    margin: auto; /* Center alignment adjustment */
+    top: 1700px; /* Adjust this value as needed */
+    text-align: center; /* Center-align the text content */
+}
+
+/* ... (remaining styles) ... */
+
+#title2 {
+    font-weight: bold;
+    font-size: 50px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 950px;
+    top: 1100px; /* Adjust this value as needed */
+    text-decoration-thickness: 5px;
+}
+
+.hover-show {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#paragraph2:hover .hover-show {
+    opacity: 1; /* Show on hover */
+    color: lightpink;
+}
+
+#title:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+ }
+  .mountains:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#subText {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+#sketch-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow interactions to pass through */
+}
